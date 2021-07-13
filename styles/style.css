@@ -1,0 +1,155 @@
+body{
+    background-color: aliceblue;
+}
+#top-section,#lastSection{
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    
+
+}
+
+.top-player{
+    width: 90%;
+    margin: auto;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.player img{
+    width: 100px;
+    margin-right: 20px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 20px;
+}
+.player{
+    display: flex;
+    margin-bottom: 10%;
+    align-items: center;
+   
+}
+.blogs-tittle{
+    margin-left: 110px;
+}
+.top-blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 20px;
+}
+.blog{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    padding-bottom: 50px;
+}
+.blog-img{
+    width: 55%;
+    margin-right: 20px;
+}
+.blog-detail{
+    width: 45%;
+}
+.blog-img img{
+    width: 100%;
+}
+.last-section{
+    padding-left: 102px;
+    padding-top: 50px;
+}
+.courses{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+   
+}
+.course{
+    width: 70%;
+    background-color: lightcyan;
+    margin: auto;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border-radius: 10px;
+   box-shadow: 10px 10px 20px gray;
+}
+.course .thumbnail{
+    width: 90%;
+    padding-left: 14px;
+    
+} 
+.thumbnail img{
+    width: 90%;
+    
+} 
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+
+
+/* using media query */
+
+
+
+@media (max-width:980px) {
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-top: 20px;
+    }
+    .top-blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 20px;
+    }
+    .courses{
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 50px;
+       
+    }
+    .course{
+        margin-bottom: 20px;
+    }
+  
+    
+}
+@media (max-width:670px) {
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 20px;
+    }
+    .blog-detail{
+        width: 85%;
+    }
+    .blog-img {
+        width: 91%;
+        margin-right: 20px;
+    }
+    .blog-img img{
+        width: 100%;
+        margin-right: 20px;
+    }
+    .blog{
+        flex-direction: column;
+    }
+}
+
